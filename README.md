@@ -1,4 +1,6 @@
-﻿# HackTheBox: Enigma Walkthrough
+<img width="948" height="521" alt="image" src="https://github.com/user-attachments/assets/2eff321e-6cc6-46b9-bdf9-1d952764daad" />
+
+ # HackTheBox: Enigma Walkthrough
 
 **Difficulty:** Easy (Felt like Medium)  
 **OS:** Linux  
@@ -78,7 +80,8 @@ Connecting to the local MySQL database exposes the application user accounts:
 \\\ash
 mysql -u brollin -p'Fri3nds@9099' openstamanager -e "SELECT username, password FROM zz_users;"
 \\\
-This dumps a bcrypt hash for user \haris\. Cracking the hash using John the Ripper and the standard \ockyou.txt\ dictionary yields the plaintext password:
+This dumps a bcrypt hash for user \haris\. Cracking the hash using John the Ripper and the standard \
+ockyou.txt\ dictionary yields the plaintext password:
 \\\ash
 john --format=bcrypt --wordlist=rockyou.txt haris.hash
 \\\
@@ -92,14 +95,16 @@ cat user.txt
 
 ---
 
-## 5. Vertical Privilege Escalation (\haris\ $\rightarrow$ \oot\)
+## 5. Vertical Privilege Escalation (\haris\ $\rightarrow$ \
+oot\)
 
 ### Internal Service Discovery
 Checking local sockets reveals an internal service bound to the loopback interface:
 \\\ash
 ss -tulnp
 \\\
-An instance of **OliveTin** runs on \127.0.0.1:1337\ executing tasks as \oot\. 
+An instance of **OliveTin** runs on \127.0.0.1:1337\ executing tasks as \
+oot\. 
 
 ### Interacting with the OliveTin API
 API reconnaissance indicates that recent versions of OliveTin require the \indingId\ parameter rather than legacy keys. The \ackup_database\ binding executes a \mysqldump\ command where parameters are improperly escaped.
@@ -188,7 +193,8 @@ map\
 * Netcat (\
 c\)
 * MySQL client
-* John the Ripper (\crypt\ mode with \ockyou.txt\)
+* John the Ripper (\crypt\ mode with \
+ockyou.txt\)
 * Python 3 (\urllib\, \ase64\, \json\)
 
 ---
