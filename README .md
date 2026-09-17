@@ -6,8 +6,6 @@ Writeups and methodology notes from machines I've completed on [Hack The Box](ht
 
 Hands-on offensive security practice as I finish my Cybersecurity Engineering degree (2026) and look for my first role in the field.
 
-More about me → [profile README](#) · [LinkedIn](#) · [HTB Profile](#)
-
 ## Structure
 
 ```
