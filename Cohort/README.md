@@ -1,12 +1,12 @@
-# 🎯 Hack The Box — Cohort
+#  Hack The Box — Cohort
 
 **OS:** Linux
-**Difficulty:** Medium/Hard
-**Status:** Rooted ✅
+**Difficulty:** easy
+**Status:** Rooted 
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 Cohort is a Linux machine where the attack chain starts with a web application and eventually leads to a shell as the `marimo` user.
 
@@ -245,12 +245,13 @@ Then I read the root flag:
 ```bash
 cat /root/root.txt
 ```
+<img width="600" height="423" alt="image" src="https://github.com/user-attachments/assets/084822e5-3780-4e95-b647-e29733d0a11e" />
 
-🎉 **Root obtained!**
+ **Root obtained!**
 
 ---
 
-# 🔗 Full Attack Chain
+#  Full Attack Chain
 
 ```text
 Cohort web application
@@ -280,7 +281,7 @@ ROOT
 
 ---
 
-## 🧠 Lessons Learned
+## Lessons Learned
 
 * Always enumerate web applications carefully.
 * SSRF can expose services that are supposed to be internal.
@@ -290,12 +291,12 @@ ROOT
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 `nmap` · `curl` · `websocat` · `wget` · `gcc` · `pkg-config` · `Python HTTP Server`
 
 ---
 
-# 🏁 Cohort — Rooted
+# 🏁Cohort — Rooted
 
-Another HTB box completed. 🔐
+Another HTB box completed. 
