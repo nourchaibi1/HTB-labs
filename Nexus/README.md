@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎯 HTB — Nexus
+# HTB — Nexus
 
 **Easy · Linux · Hack The Box**
 
@@ -20,11 +20,11 @@
 | **Hostname**   | `nexus.htb`     |
 | **OS**         | Linux           |
 | **Difficulty** | Easy            |
-| **Status**     | ✅ Rooted        |
+| **Status**     |  Rooted        |
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 * [1. Reconnaissance](#1-reconnaissance)
 
@@ -377,11 +377,6 @@ ls
 cat user.txt
 ```
 
-The user flag was:
-
-```text
-a21426bb47c4b86dce2cdf48851c4dd6
-```
 
 ---
 
@@ -535,12 +530,6 @@ After obtaining root-level command execution, I accessed:
 /root/root.txt
 ```
 
-The root flag was:
-
-```text
-5bf032d30fea834e56b378a46fef364f
-```
-
 ### Final Attack Chain
 
 ```text
@@ -603,7 +592,6 @@ Some of the main things I learned from this machine:
 * SSH
 * Linux/systemd
 * Python
-* Hack The Box
 
 ---
 
