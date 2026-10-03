@@ -15,11 +15,6 @@ Hands-on offensive security practice as I finish my Cybersecurity Engineering de
 
 Each writeup follows: recon → enumeration → foothold → privilege escalation → lessons learned. Flags are redacted per HTB's guidelines.
 
-## Machines
-
-| Machine | OS | Difficulty | Key Techniques | Status |
-|---|---|---|---|---|
-| [Enigma](./Enigma) | Linux | Easy (rated) | Credential reuse, CVE exploitation, privilege escalation | ✅ Rooted |
 
 ## Skills Demonstrated
 
